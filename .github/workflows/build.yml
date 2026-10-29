@@ -25,7 +25,7 @@ jobs:
         with:  
           distribution: temurin  
           java-version: 21 
-              - name: Prepare Android SDK
+      - name: Prepare Android SDK
         run: |
           export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
           echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
