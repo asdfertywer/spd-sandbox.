@@ -24,9 +24,8 @@ jobs:
       - uses: actions/setup-java@v4  
         with:  
           distribution: temurin  
-          java-version: 21  
-  
-            - name: Prepare Android SDK
+          java-version: 21 
+              - name: Prepare Android SDK
         run: |
           export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
           echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
@@ -35,6 +34,10 @@ jobs:
 
       - name: Fix debug keystore
         run: |
+          mkdir -p "$HOME/.config/.android"
+          chmod -R u+rwX "$HOME/.config"
+          mkdir -p "$HOME/.android"
+          chmod -R u+rwX "$HOME/.android"
           mkdir -p "$HOME/.config/.android"
           chmod -R u+rwX "$HOME/.config"
           mkdir -p "$HOME/.android"
