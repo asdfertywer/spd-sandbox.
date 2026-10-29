@@ -1,0 +1,48 @@
+name: Build Sandbox APK
+
+on:
+  workflow_dispatch:
+  push:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout this repo (contains sandbox-mode.patch)
+        uses: actions/checkout@v4
+
+      - name: Get official Shattered Pixel Dungeon and apply Sandbox patch
+        run: |
+          git clone https://github.com/00-Evan/shattered-pixel-dungeon.git game
+          cd game
+          git checkout 57a4e06a4caf162446d1c28caa7983f0493fecf0
+          git apply --whitespace=nowarn ../sandbox-mode.patch
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Build debug APK
+        working-directory: game
+        run: |
+          chmod +x gradlew
+          ./gradlew :android:assembleDebug --no-daemon --stacktrace
+
+      - name: Keep APK as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ShatteredPD-Sandbox-apk
+          path: game/android/build/outputs/apk/debug/*.apk
+
+      - name: Publish APK in Releases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          cp game/android/build/outputs/apk/debug/*.apk ShatteredPD-Sandbox.apk
+          gh release create "sandbox-${{ github.run_number }}" ShatteredPD-Sandbox.apk --title "Sandbox APK #${{ github.run_number }}" --notes "Debug APK with Sandbox Mode"
