@@ -1,0 +1,1941 @@
+diff --git a/core/src/main/assets/messages/scenes/scenes.properties b/core/src/main/assets/messages/scenes/scenes.properties
+index b899063..e4b182c 100644
+--- a/core/src/main/assets/messages/scenes/scenes.properties
++++ b/core/src/main/assets/messages/scenes/scenes.properties
+@@ -160,4 +160,9 @@ scenes.welcomescene.changelist=Changelist
+ scenes.welcomescene.save_warning=Shattered Pixel Dungeon was interrupted while trying to save your game data recently. Shattered has built-in protections against this, so your game data should be fine.\n\nThis usually happens when your device suddenly loses power, or if it terminates Shattered without letting it close properly. Battery saver features can often cause this on mobile devices. Restarting your device may also help if you are seeing this error frequently.
+ scenes.welcomescene.controller_title=Controller Input
+ scenes.welcomescene.controller_body=Playing on a controller? Use the right stick to control an on-screen cursor.\n\nPress RT/R2 or the right stick to select with the cursor.
+-scenes.welcomescene.controller_okay=Okay
+\ No newline at end of file
++scenes.welcomescene.controller_okay=Okay
++
++##### Sandbox Mode (modification) #####
++scenes.titlescene.sandbox=Sandbox
++scenes.titlescene.sandbox_full=All save slots are in use. Finish or delete a run to start a Sandbox game.
++scenes.heroselectscene.sandbox_tag=Sandbox
+diff --git a/core/src/main/assets/messages/scenes/scenes_uk.properties b/core/src/main/assets/messages/scenes/scenes_uk.properties
+index 89dc99b..a111748 100644
+--- a/core/src/main/assets/messages/scenes/scenes_uk.properties
++++ b/core/src/main/assets/messages/scenes/scenes_uk.properties
+@@ -161,3 +161,8 @@ scenes.welcomescene.save_warning=Процес Shattered Pixel Dungeon було 
+ scenes.welcomescene.controller_title=Введення контролером
+ scenes.welcomescene.controller_body=Граєте на контролері? Використовуйте правий джойстик для керування екранним курсором.\n\nНатисніть RT/R2 або правий джойстик, щоб обрати курсором.
+ scenes.welcomescene.controller_okay=Добре
++
++##### Режим пісочниці (модифікація) #####
++scenes.titlescene.sandbox=Пісочниця
++scenes.titlescene.sandbox_full=Усі слоти збереження зайняті. Завершіть або видаліть забіг, щоб почати гру в пісочниці.
++scenes.heroselectscene.sandbox_tag=Пісочниця
+diff --git a/core/src/main/assets/messages/windows/windows.properties b/core/src/main/assets/messages/windows/windows.properties
+index 5ecc9ae..3dcd517 100644
+--- a/core/src/main/assets/messages/windows/windows.properties
++++ b/core/src/main/assets/messages/windows/windows.properties
+@@ -407,3 +407,70 @@ windows.wndwandmaker.dust=Oh, I see you have the dust! Don't worry about the wra
+ windows.wndwandmaker.ember=Oh, I see you have the embers! I do hope the fire elemental wasn't too much trouble. As I promised, you can choose one of my high quality wands.
+ windows.wndwandmaker.berry=Oh, I see you have the berry! I do hope the rotberry plant didn't trouble you too much. As I promised, you can choose one of my high quality wands.
+ windows.wndwandmaker.farewell=Good luck in your quest, %s!
++
++##### Sandbox Mode (modification) #####
++windows.wndgame.sandbox=Sandbox Menu
++sandbox.sandboxmode.added=Added to inventory: %s.
++windows.wndsandbox.title=Sandbox
++windows.wndsandbox.weapons=Weapons
++windows.wndsandbox.armor=Armor
++windows.wndsandbox.enchants=Enchantments & Glyphs
++windows.wndsandbox.upgrade_scrolls=Scrolls of Upgrade
++windows.wndsandbox.artifacts=Artifacts
++windows.wndsandbox.rings=Rings
++windows.wndsandbox.missiles=Thrown Weapons
++windows.wndsandbox.other=Other Items
++windows.wndsandbox.edit_item=Edit Carried Item
++windows.wndsandbox.stats=Hero Stats
++windows.wndsandbox.alchemy=Alchemy Pot
++windows.wndsandbox.pick_enchantable=Choose a weapon or armor
++windows.wndsandbox.pick_item=Choose an item to edit
++windows.wndsandbox.back=Back
++windows.wndsandbox.search=Search
++windows.wndsandbox.search_title=Search items
++windows.wndsandbox.search_desc=Enter part of an item's name.
++windows.wndsandbox.search_ok=Search
++windows.wndsandbox.search_clear=Clear
++windows.wndsandbox.quick_on=Quick add: ON
++windows.wndsandbox.quick_off=Quick add: OFF
++windows.wndsandbox.no_results=No items found
++windows.wndsandbox.tier_1=Tier 1
++windows.wndsandbox.tier_2=Tier 2
++windows.wndsandbox.tier_3=Tier 3
++windows.wndsandbox.tier_4=Tier 4
++windows.wndsandbox.tier_5=Tier 5
++windows.wndsandbox.tipped_darts=Tipped Darts
++windows.wndsandbox.wands=Wands
++windows.wndsandbox.potions=Potions
++windows.wndsandbox.exotic_potions=Exotic Potions
++windows.wndsandbox.brews_elixirs=Brews & Elixirs
++windows.wndsandbox.scrolls=Scrolls
++windows.wndsandbox.exotic_scrolls=Exotic Scrolls
++windows.wndsandbox.stones=Runestones
++windows.wndsandbox.spells=Spells
++windows.wndsandbox.bombs=Bombs
++windows.wndsandbox.seeds=Seeds
++windows.wndsandbox.food=Food
++windows.wndsandbox.trinkets=Trinkets
++windows.wndsandbox.misc=Miscellaneous
++windows.wndsandbox.common=Common
++windows.wndsandbox.uncommon=Uncommon
++windows.wndsandbox.rare=Rare
++windows.wndsandbox.curses=Curses
++windows.wndsandbox.level=Level
++windows.wndsandbox.quantity=Amount
++windows.wndsandbox.enchant_button=Change enchantment
++windows.wndsandbox.glyph_button=Change glyph
++windows.wndsandbox.add=Add to inventory
++windows.wndsandbox.status_level=Upgrade level: +%d
++windows.wndsandbox.status_enchant=Enchantment: %s
++windows.wndsandbox.status_glyph=Glyph: %s
++windows.wndsandbox.remove_enchant=None (remove)
++windows.wndsandbox.enchant_removed=Removed the enchantment/glyph from %s.
++windows.wndsandbox.enchant_applied=Applied: %s.
++windows.wndsandbox.stat_level=Level
++windows.wndsandbox.stat_str=Strength
++windows.wndsandbox.stat_hp=Bonus HP
++windows.wndsandbox.stat_gold=Gold
++windows.wndsandbox.stat_energy=Energy
++windows.wndsandbox.heal=Restore full health
+diff --git a/core/src/main/assets/messages/windows/windows_uk.properties b/core/src/main/assets/messages/windows/windows_uk.properties
+index dceec29..c6154ac 100644
+--- a/core/src/main/assets/messages/windows/windows_uk.properties
++++ b/core/src/main/assets/messages/windows/windows_uk.properties
+@@ -407,3 +407,70 @@ windows.wndwandmaker.dust=О, бачу, ви знайшли прах! За пр
+ windows.wndwandmaker.ember=О, бачу, ви знайшли жарину! Надіюся, вогняний елементаль не завдав багато клопоту.  Як і обіцяв, можете обрати одну з моїх найліпших паличок.
+ windows.wndwandmaker.berry=О, бачу, ви знайшли ягоду! Надіюсь, гнилофрукт не завдав багато клопоту. Як і обіцяв, можете обрати одну з моїх найліпших паличок.
+ windows.wndwandmaker.farewell=Хай щастить тобі у поході, %s!
++
++##### Режим пісочниці (модифікація) #####
++windows.wndgame.sandbox=Меню пісочниці
++sandbox.sandboxmode.added=Додано до інвентарю: %s.
++windows.wndsandbox.title=Пісочниця
++windows.wndsandbox.weapons=Зброя
++windows.wndsandbox.armor=Броня
++windows.wndsandbox.enchants=Зачарування та гліфи
++windows.wndsandbox.upgrade_scrolls=Сувої покращення
++windows.wndsandbox.artifacts=Артефакти
++windows.wndsandbox.rings=Кільця
++windows.wndsandbox.missiles=Метальна зброя
++windows.wndsandbox.other=Інші предмети
++windows.wndsandbox.edit_item=Змінити свій предмет
++windows.wndsandbox.stats=Характеристики героя
++windows.wndsandbox.alchemy=Алхімічний горщик
++windows.wndsandbox.pick_enchantable=Оберіть зброю або броню
++windows.wndsandbox.pick_item=Оберіть предмет для зміни
++windows.wndsandbox.back=Назад
++windows.wndsandbox.search=Пошук
++windows.wndsandbox.search_title=Пошук предметів
++windows.wndsandbox.search_desc=Введіть частину назви предмета.
++windows.wndsandbox.search_ok=Шукати
++windows.wndsandbox.search_clear=Скинути
++windows.wndsandbox.quick_on=Швидко: УВІМК
++windows.wndsandbox.quick_off=Швидко: ВИМК
++windows.wndsandbox.no_results=Нічого не знайдено
++windows.wndsandbox.tier_1=Рівень 1
++windows.wndsandbox.tier_2=Рівень 2
++windows.wndsandbox.tier_3=Рівень 3
++windows.wndsandbox.tier_4=Рівень 4
++windows.wndsandbox.tier_5=Рівень 5
++windows.wndsandbox.tipped_darts=Дротики з ефектами
++windows.wndsandbox.wands=Жезли
++windows.wndsandbox.potions=Зілля
++windows.wndsandbox.exotic_potions=Екзотичні зілля
++windows.wndsandbox.brews_elixirs=Відвари та еліксири
++windows.wndsandbox.scrolls=Сувої
++windows.wndsandbox.exotic_scrolls=Екзотичні сувої
++windows.wndsandbox.stones=Руни
++windows.wndsandbox.spells=Закляття
++windows.wndsandbox.bombs=Бомби
++windows.wndsandbox.seeds=Насіння
++windows.wndsandbox.food=Їжа
++windows.wndsandbox.trinkets=Талісмани
++windows.wndsandbox.misc=Різне
++windows.wndsandbox.common=Звичайні
++windows.wndsandbox.uncommon=Незвичайні
++windows.wndsandbox.rare=Рідкісні
++windows.wndsandbox.curses=Прокляття
++windows.wndsandbox.level=Рівень
++windows.wndsandbox.quantity=Кількість
++windows.wndsandbox.enchant_button=Змінити зачарування
++windows.wndsandbox.glyph_button=Змінити гліф
++windows.wndsandbox.add=Додати до інвентарю
++windows.wndsandbox.status_level=Рівень покращення: +%d
++windows.wndsandbox.status_enchant=Зачарування: %s
++windows.wndsandbox.status_glyph=Гліф: %s
++windows.wndsandbox.remove_enchant=Без зачарування (прибрати)
++windows.wndsandbox.enchant_removed=Зачарування/гліф знято з %s.
++windows.wndsandbox.enchant_applied=Застосовано: %s.
++windows.wndsandbox.stat_level=Рівень
++windows.wndsandbox.stat_str=Сила
++windows.wndsandbox.stat_hp=Бонус до ЗДР
++windows.wndsandbox.stat_gold=Золото
++windows.wndsandbox.stat_energy=Енергія
++windows.wndsandbox.heal=Повністю відновити здоров'я
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Dungeon.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Dungeon.java
+index 1c02505..32d1438 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Dungeon.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/Dungeon.java
+@@ -209,6 +209,8 @@ public class Dungeon {
+ 
+ 	public static boolean daily;
+ 	public static boolean dailyReplay;
++	//Sandbox mode: a testing mode with item menu, infinite upgrades and free alchemy. Saved with the run.
++	public static boolean sandbox;
+ 	public static String customSeedText = "";
+ 	public static long seed;
+ 	public static long lastPlayed;
+@@ -228,6 +230,11 @@ public class Dungeon {
+ 			customSeedText = "";
+ 			seed = DungeonSeed.randomSeed();
+ 		}
++
++		//sandbox runs are flagged like custom-seed runs, so badges/bones/rankings treat them as non-standard
++		if (sandbox && !daily){
++			customSeedText = "Sandbox";
++		}
+ 	}
+ 	
+ 	public static void init() {
+@@ -284,6 +291,10 @@ public class Dungeon {
+ 		Badges.reset();
+ 		
+ 		GamesInProgress.selectedClass.initHero( hero );
++
++		if (sandbox){
++			com.shatteredpixel.shatteredpixeldungeon.sandbox.SandboxMode.initRun( hero );
++		}
+ 	}
+ 
+ 	public static boolean isChallenged( int mask ) {
+@@ -604,6 +615,7 @@ public class Dungeon {
+ 	private static final String CUSTOM_SEED	= "custom_seed";
+ 	private static final String DAILY	    = "daily";
+ 	private static final String DAILY_REPLAY= "daily_replay";
++	private static final String SANDBOX	= "sandbox";
+ 	private static final String LAST_PLAYED = "last_played";
+ 	private static final String CHALLENGES	= "challenges";
+ 	private static final String MOBS_TO_CHAMPION	= "mobs_to_champion";
+@@ -631,6 +643,7 @@ public class Dungeon {
+ 			bundle.put( CUSTOM_SEED, customSeedText );
+ 			bundle.put( DAILY, daily );
+ 			bundle.put( DAILY_REPLAY, dailyReplay );
++			bundle.put( SANDBOX, sandbox );
+ 			bundle.put( LAST_PLAYED, lastPlayed = Game.realTime);
+ 			bundle.put( CHALLENGES, challenges );
+ 			bundle.put( MOBS_TO_CHAMPION, mobsToChampion );
+@@ -731,6 +744,7 @@ public class Dungeon {
+ 		customSeedText = bundle.getString( CUSTOM_SEED );
+ 		daily = bundle.getBoolean( DAILY );
+ 		dailyReplay = bundle.getBoolean( DAILY_REPLAY );
++		sandbox = bundle.getBoolean( SANDBOX );
+ 
+ 		Actor.clear();
+ 		Actor.restoreNextID( bundle );
+@@ -863,6 +877,7 @@ public class Dungeon {
+ 		info.customSeed = bundle.getString( CUSTOM_SEED );
+ 		info.daily = bundle.getBoolean( DAILY );
+ 		info.dailyReplay = bundle.getBoolean( DAILY_REPLAY );
++		info.sandbox = bundle.getBoolean( SANDBOX );
+ 		info.lastPlayed = bundle.getLong( LAST_PLAYED );
+ 
+ 		Hero.preview( info, bundle.getBundle( HERO ) );
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/GamesInProgress.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/GamesInProgress.java
+index 3f0d2ea..233641d 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/GamesInProgress.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/GamesInProgress.java
+@@ -148,6 +148,7 @@ public class GamesInProgress {
+ 		info.customSeed = Dungeon.customSeedText;
+ 		info.daily = Dungeon.daily;
+ 		info.dailyReplay = Dungeon.dailyReplay;
++		info.sandbox = Dungeon.sandbox;
+ 		
+ 		info.level = Dungeon.hero.lvl;
+ 		info.str = Dungeon.hero.STR;
+@@ -185,6 +186,7 @@ public class GamesInProgress {
+ 		public String customSeed;
+ 		public boolean daily;
+ 		public boolean dailyReplay;
++		public boolean sandbox;
+ 		public long lastPlayed;
+ 
+ 		public int level;
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/armor/Armor.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/armor/Armor.java
+index 32c627a..a9d8c13 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/armor/Armor.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/armor/Armor.java
+@@ -461,7 +461,7 @@ public class Armor extends EquipableItem {
+ 			if (glyph == null){
+ 				inscribe( Glyph.random() );
+ 			}
+-		} else if (glyph != null) {
++		} else if (glyph != null && !Dungeon.sandbox) {
+ 			//chance to lose harden buff is 10/20/40/80/100% when upgrading from +6/7/8/9/10
+ 			if (glyphHardened) {
+ 				if (level() >= 6 && Random.Float(10) < Math.pow(2, level()-6)){
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/weapon/Weapon.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/weapon/Weapon.java
+index 3c29d16..42ca4b8 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/weapon/Weapon.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/items/weapon/Weapon.java
+@@ -380,7 +380,7 @@ abstract public class Weapon extends KindOfWeapon {
+ 			if (enchantment == null){
+ 				enchant(Enchantment.random());
+ 			}
+-		} else if (enchantment != null) {
++		} else if (enchantment != null && !Dungeon.sandbox) {
+ 			//chance to lose harden buff is 10/20/40/80/100% when upgrading from +6/7/8/9/10
+ 			if (enchantHardened){
+ 				if (level() >= 6 && Random.Float(10) < Math.pow(2, level()-6)){
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/journal/Catalog.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/journal/Catalog.java
+index 424e127..82cd9f0 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/journal/Catalog.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/journal/Catalog.java
+@@ -306,6 +306,8 @@ public enum Catalog {
+ 	}
+ 	
+ 	public static void setSeen(Class<?> cls){
++		//sandbox runs must not unlock entries in the player's real journal
++		if (Dungeon.sandbox) return;
+ 		for (Catalog cat : values()) {
+ 			if (cat.seen.containsKey(cls) && !cat.seen.get(cls)) {
+ 				cat.seen.put(cls, true);
+@@ -329,6 +331,7 @@ public enum Catalog {
+ 	}
+ 
+ 	public static void countUses(Class<?> cls, int uses){
++		if (Dungeon.sandbox) return;
+ 		for (Catalog cat : values()) {
+ 			if (cat.useCount.containsKey(cls) && cat.useCount.get(cls) != Integer.MAX_VALUE) {
+ 				cat.useCount.put(cls, cat.useCount.get(cls)+uses);
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/sandbox/SandboxMode.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/sandbox/SandboxMode.java
+new file mode 100644
+index 0000000..f624954
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/sandbox/SandboxMode.java
+@@ -0,0 +1,348 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.sandbox;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.Generator;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.ClassArmor;
++import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfUpgrade;
++import com.shatteredpixel.shatteredpixeldungeon.items.wands.WandOfMagicMissile;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.melee.MagesStaff;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++import com.watabou.utils.Reflection;
++
++import java.lang.reflect.Modifier;
++import java.util.ArrayList;
++import java.util.Arrays;
++
++/**
++ * Central helper for Sandbox Mode. Nothing here is used unless Dungeon.sandbox is true.
++ *
++ * Item catalogs are built from the game's own Generator categories (plus a few explicit lists of
++ * classes that exist in the code base), so every entry is a real, existing item class.
++ */
++public class SandboxMode {
++
++	public static final int START_GOLD   = 99999;
++	public static final int START_ENERGY = 99999;
++
++	public static final int MAX_LEVEL = 99;
++	public static final int MAX_QUANTITY = 999;
++
++	//defaults used by the item menu's "quick add" mode and pre-filled in the item window
++	public static boolean quickAdd = false;
++	public static int defaultLevel = 0;
++	public static int defaultQuantity = 1;
++
++	/** Called once, right after the hero was created for a brand new Sandbox run. */
++	public static void initRun( Hero hero ){
++		Dungeon.gold = START_GOLD;
++		Dungeon.energy = START_ENERGY;
++
++		//Scrolls of Upgrade are never consumed in sandbox mode, so a single one is enough
++		Item scroll = new ScrollOfUpgrade().identify();
++		scroll.collect();
++	}
++
++	// ------------------------------------------------------------------------------------------
++	// Item catalogs
++	// ------------------------------------------------------------------------------------------
++
++	public enum Category {
++		WEAPON,
++		ARMOR,
++		RING,
++		ARTIFACT,
++		MISSILE,
++		OTHER
++	}
++
++	/** A titled group of item classes, used to build sectioned lists. */
++	public static class Section {
++		public final String titleKey; //key in WndSandbox messages, or null for no title
++		public final ArrayList<Class<?>> classes = new ArrayList<>();
++
++		public Section( String titleKey, Class<?>... classes ){
++			this.titleKey = titleKey;
++			this.classes.addAll(Arrays.asList(classes));
++		}
++
++	}
++
++	public static ArrayList<Section> sections( Category category ){
++		ArrayList<Section> result = new ArrayList<>();
++
++		switch (category){
++			case WEAPON:
++				result.add(new Section("tier_1", Generator.Category.WEP_T1.classes));
++				result.add(new Section("tier_2", Generator.Category.WEP_T2.classes));
++				result.add(new Section("tier_3", Generator.Category.WEP_T3.classes));
++				result.add(new Section("tier_4", Generator.Category.WEP_T4.classes));
++				result.add(new Section("tier_5", Generator.Category.WEP_T5.classes));
++				break;
++
++			case ARMOR:
++				result.add(new Section(null, Generator.Category.ARMOR.classes));
++				break;
++
++			case RING:
++				result.add(new Section(null, Generator.Category.RING.classes));
++				break;
++
++			case ARTIFACT:
++				result.add(new Section(null, Generator.Category.ARTIFACT.classes));
++				break;
++
++			case MISSILE:
++				result.add(new Section("tier_1", Generator.Category.MIS_T1.classes));
++				result.add(new Section("tier_2", Generator.Category.MIS_T2.classes));
++				result.add(new Section("tier_3", Generator.Category.MIS_T3.classes));
++				result.add(new Section("tier_4", Generator.Category.MIS_T4.classes));
++				result.add(new Section("tier_5", Generator.Category.MIS_T5.classes));
++				result.add(new Section("tipped_darts",
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.AdrenalineDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.BlindingDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.ChillingDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.CleansingDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.DisplacingDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.HealingDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.HolyDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.IncendiaryDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.ParalyticDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.PoisonDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.RotDart.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.weapon.missiles.darts.ShockingDart.class));
++				break;
++
++			case OTHER:
++				result.add(new Section("wands", Generator.Category.WAND.classes));
++				result.add(new Section("potions", Generator.Category.POTION.classes));
++				Section exoPotions = new Section("exotic_potions");
++				exoPotions.classes.addAll(com.shatteredpixel.shatteredpixeldungeon.items.potions.exotic.ExoticPotion.regToExo.values());
++				result.add(exoPotions);
++				result.add(new Section("brews_elixirs",
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.AquaBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.BlizzardBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.CausticBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.InfernalBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.ShockingBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.brews.UnstableBrew.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfAquaticRejuvenation.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfArcaneArmor.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfDragonsBlood.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfFeatherFall.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfHoneyedHealing.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfIcyTouch.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfMight.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.potions.elixirs.ElixirOfToxicEssence.class));
++				result.add(new Section("scrolls", Generator.Category.SCROLL.classes));
++				Section exoScrolls = new Section("exotic_scrolls");
++				exoScrolls.classes.addAll(com.shatteredpixel.shatteredpixeldungeon.items.scrolls.exotic.ExoticScroll.regToExo.values());
++				result.add(exoScrolls);
++				result.add(new Section("stones", Generator.Category.STONE.classes));
++				result.add(new Section("spells",
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.Alchemize.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.BeaconOfReturning.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.CurseInfusion.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.MagicalInfusion.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.PhaseShift.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.ReclaimTrap.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.Recycle.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.SummonElemental.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.TelekineticGrab.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.UnstableSpell.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.spells.WildEnergy.class));
++				result.add(new Section("bombs",
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.Bomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.ArcaneBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.Firebomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.FlashBangBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.FrostBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.HolyBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.Noisemaker.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.RegrowthBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.ShrapnelBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.SmokeBomb.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bombs.WoollyBomb.class));
++				result.add(new Section("seeds", Generator.Category.SEED.classes));
++				result.add(new Section("food",
++						com.shatteredpixel.shatteredpixeldungeon.items.food.Food.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.SmallRation.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.SupplyRation.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.Pasty.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.MeatPie.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.Berry.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.MysteryMeat.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.ChargrilledMeat.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.StewedMeat.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.FrozenCarpaccio.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.food.PhantomMeat.class));
++				Section trinkets = new Section("trinkets", Generator.Category.TRINKET.classes);
++				trinkets.classes.add(com.shatteredpixel.shatteredpixeldungeon.items.trinkets.TrinketCatalyst.class);
++				result.add(trinkets);
++				result.add(new Section("misc",
++						com.shatteredpixel.shatteredpixeldungeon.items.Ankh.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.Torch.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.Honeypot.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.Stylus.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.ArcaneResin.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.LiquidMetal.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.EnergyCrystal.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bags.VelvetPouch.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bags.ScrollHolder.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bags.PotionBandolier.class,
++						com.shatteredpixel.shatteredpixeldungeon.items.bags.MagicalHolster.class));
++				break;
++		}
++
++		return result;
++	}
++
++	/**
++	 * Creates a fresh, identified instance of the given item class, or null if the class
++	 * can't (or shouldn't) be instantiated by the menu.
++	 */
++	public static Item create( Class<?> cls ){
++		if (cls == null || Modifier.isAbstract(cls.getModifiers())) return null;
++		if (!Item.class.isAssignableFrom(cls)) return null;
++		//class armors are only ever created by transforming an armor, using the hero's armor ability
++		if (ClassArmor.class.isAssignableFrom(cls)) return null;
++
++		Item item;
++		if (cls == MagesStaff.class){
++			item = new MagesStaff(new WandOfMagicMissile());
++		} else {
++			item = (Item) Reflection.newInstance(cls);
++		}
++		if (item == null) return null;
++
++		item.identify(false);
++		item.cursed = false;
++		return item;
++	}
++
++	/** Builds all items of a section (skipping classes that can't be created). */
++	public static ArrayList<Item> createAll( Section section ){
++		ArrayList<Item> items = new ArrayList<>();
++		for (Class<?> cls : section.classes){
++			Item item = create(cls);
++			if (item != null) items.add(item);
++		}
++		return items;
++	}
++
++	// ------------------------------------------------------------------------------------------
++	// Item manipulation
++	// ------------------------------------------------------------------------------------------
++
++	/** Applies the menu's current default level/quantity to a freshly created item. */
++	public static Item prefill( Item item ){
++		if (item == null) return null;
++		if (item.isUpgradable()) setLevel(item, defaultLevel);
++		if (item.stackable) item.quantity(Math.max(1, Math.min(MAX_QUANTITY, defaultQuantity)));
++		return item;
++	}
++
++	/** Sets the upgrade level using the item's own upgrade/degrade logic. */
++	public static void setLevel( Item item, int target ){
++		if (!item.isUpgradable()) return;
++		target = Math.max(0, Math.min(MAX_LEVEL, target));
++
++		int guard = 0;
++		while (item.level() < target && guard++ < 200) item.upgrade();
++		while (item.level() > target && guard++ < 400) item.degrade();
++		item.cursed = false;
++		item.identify(false);
++	}
++
++	/** Adds an item to the hero's pack, or drops it at the hero's feet when the pack is full. */
++	public static void give( Item item ){
++		Hero hero = Dungeon.hero;
++		if (hero == null || item == null) return;
++
++		String name = item.name();
++		if (!item.collect()){
++			Dungeon.level.drop(item, hero.pos);
++		}
++		GLog.p(Messages.get(SandboxMode.class, "added", name));
++	}
++
++	/** Weapon enchantments / armor glyphs usable by the enchantment menu, grouped by rarity. */
++	public static ArrayList<Section> enchantSections( Item item ){
++		ArrayList<Section> result = new ArrayList<>();
++		if (item instanceof Weapon){
++			result.add(new Section("common", Weapon.Enchantment.common));
++			result.add(new Section("uncommon", Weapon.Enchantment.uncommon));
++			result.add(new Section("rare", Weapon.Enchantment.rare));
++			result.add(new Section("curses", Weapon.Enchantment.curses));
++		} else if (item instanceof Armor){
++			result.add(new Section("common", Armor.Glyph.common));
++			result.add(new Section("uncommon", Armor.Glyph.uncommon));
++			result.add(new Section("rare", Armor.Glyph.rare));
++			result.add(new Section("curses", Armor.Glyph.curses));
++		}
++		return result;
++	}
++
++	/** Applies (or, for a null class, removes) an enchantment/glyph, ignoring all usual restrictions. */
++	public static void applyEnchant( Item item, Class<?> cls ){
++		if (item instanceof Weapon){
++			Weapon w = (Weapon) item;
++			if (cls == null){
++				w.enchant(null);
++			} else {
++				w.enchant((Weapon.Enchantment) Reflection.newInstance(cls));
++			}
++			w.identify(false);
++		} else if (item instanceof Armor){
++			Armor a = (Armor) item;
++			if (cls == null){
++				a.inscribe(null);
++			} else {
++				a.inscribe((Armor.Glyph) Reflection.newInstance(cls));
++			}
++			a.identify(false);
++		}
++		Item.updateQuickslot();
++	}
++
++	/** Display name of the enchantment/glyph currently on the item, or null. */
++	public static String currentEnchantName( Item item ){
++		if (item instanceof Weapon && ((Weapon) item).enchantment != null){
++			return ((Weapon) item).enchantment.name("~");
++		} else if (item instanceof Armor && ((Armor) item).glyph != null){
++			return ((Armor) item).glyph.name("~");
++		}
++		return null;
++	}
++
++	public static String enchantName( Class<?> cls ){
++		if (Weapon.Enchantment.class.isAssignableFrom(cls)){
++			return ((Weapon.Enchantment) Reflection.newInstance(cls)).name("~");
++		} else if (Armor.Glyph.class.isAssignableFrom(cls)){
++			return ((Armor.Glyph) Reflection.newInstance(cls)).name("~");
++		}
++		return cls.getSimpleName();
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/AlchemyScene.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/AlchemyScene.java
+index ff17e01..e0b4ecf 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/AlchemyScene.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/AlchemyScene.java
+@@ -644,7 +644,7 @@ public class AlchemyScene extends PixelScene {
+ 
+ 			Recipe recipe = recipes.get(i);
+ 
+-			int cost = recipe.cost(ingredients);
++			int cost = Dungeon.sandbox ? 0 : recipe.cost(ingredients);
+ 
+ 			outputs[i].visible = true;
+ 			outputs[i].setRect(outputs[0].left(), top, BTN_SIZE, BTN_SIZE);
+@@ -692,7 +692,7 @@ public class AlchemyScene extends PixelScene {
+ 		Item result = null;
+ 		
+ 		if (recipe != null){
+-			int cost = recipe.cost(ingredients);
++			int cost = Dungeon.sandbox ? 0 : recipe.cost(ingredients);
+ 			if (toolkit != null){
+ 				cost = toolkit.consumeEnergy(cost);
+ 			}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/HeroSelectScene.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/HeroSelectScene.java
+index f62edb3..fd6010a 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/HeroSelectScene.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/HeroSelectScene.java
+@@ -94,6 +94,10 @@ public class HeroSelectScene extends PixelScene {
+ 
+ 	private RectF insets;
+ 
++	//set by the title screen's Sandbox button, consumed (and cleared) when this scene is created
++	public static boolean nextSandbox = false;
++	private boolean sandbox = false;
++
+ 	private static boolean heroWasRandomized = true;
+ 	private static boolean chalWasRandomized = false;
+ 
+@@ -101,6 +105,9 @@ public class HeroSelectScene extends PixelScene {
+ 	public void create() {
+ 		super.create();
+ 
++		sandbox = nextSandbox;
++		nextSandbox = false;
++
+ 		Dungeon.hero = null;
+ 
+ 		Badges.loadGlobal();
+@@ -142,7 +149,7 @@ public class HeroSelectScene extends PixelScene {
+ 		fadeRight.angle = 180;
+ 		add(fadeRight);
+ 
+-		title = PixelScene.renderTextBlock(Messages.get(this, "title"), 12);
++		title = PixelScene.renderTextBlock(Messages.get(this, "title") + (sandbox ? " (" + Messages.get(this, "sandbox_tag") + ")" : ""), 12);
+ 		title.hardlight(Window.TITLE_COLOR);
+ 		PixelScene.align(title);
+ 		add(title);
+@@ -156,6 +163,7 @@ public class HeroSelectScene extends PixelScene {
+ 
+ 				Dungeon.hero = null;
+ 				Dungeon.daily = Dungeon.dailyReplay = false;
++				Dungeon.sandbox = sandbox;
+ 				Dungeon.initSeed();
+ 				ActionIndicator.clearAction();
+ 				InterlevelScene.mode = InterlevelScene.Mode.DESCEND;
+@@ -751,6 +759,7 @@ public class HeroSelectScene extends PixelScene {
+ 
+ 								Dungeon.hero = null;
+ 								Dungeon.daily = true;
++								Dungeon.sandbox = false;
+ 								Dungeon.initSeed();
+ 								ActionIndicator.clearAction();
+ 								InterlevelScene.mode = InterlevelScene.Mode.DESCEND;
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/TitleScene.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/TitleScene.java
+index 7c4cb12..0c4510a 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/TitleScene.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/scenes/TitleScene.java
+@@ -70,6 +70,7 @@ public class TitleScene extends PixelScene {
+ 
+ 	private StyledButton btnPlay;
+ 	private StyledButton btnSupport;
++	private StyledButton btnSandbox;
+ 	private StyledButton btnRankings;
+ 	private StyledButton btnJournal;
+ 	private StyledButton btnNews;
+@@ -174,6 +175,23 @@ public class TitleScene extends PixelScene {
+ 		btnSupport = new SupportButton(GREY_TR, Messages.get(this, "support"));
+ 		add(btnSupport);
+ 
++		btnSandbox = new StyledButton(GREY_TR, Messages.get(this, "sandbox")){
++			@Override
++			protected void onClick() {
++				int slot = GamesInProgress.firstEmpty();
++				if (slot == -1){
++					ShatteredPixelDungeon.scene().addToFront(new com.shatteredpixel.shatteredpixeldungeon.windows.WndMessage(Messages.get(TitleScene.class, "sandbox_full")));
++					return;
++				}
++				GamesInProgress.selectedClass = null;
++				GamesInProgress.curSlot = slot;
++				HeroSelectScene.nextSandbox = true;
++				ShatteredPixelDungeon.switchScene(HeroSelectScene.class);
++			}
++		};
++		btnSandbox.icon(Icons.get(Icons.CHALLENGE_COLOR));
++		add(btnSandbox);
++
+ 		btnRankings = new StyledButton(GREY_TR,Messages.get(this, "rankings")){
+ 			@Override
+ 			protected void onClick() {
+@@ -221,9 +239,10 @@ public class TitleScene extends PixelScene {
+ 		float buttonAreaWidth = landscape() ? PixelScene.MIN_WIDTH_L-6 : PixelScene.MIN_WIDTH_P-2;
+ 		float btnAreaLeft = insets.left + (w - buttonAreaWidth) / 2f;
+ 		if (landscape()) {
+-			btnPlay.setRect(btnAreaLeft, insets.top + topRegion+GAP, (buttonAreaWidth/2)-1, BTN_HEIGHT);
++			btnPlay.setRect(btnAreaLeft, insets.top + topRegion+GAP, (float) (Math.floor(buttonAreaWidth/3f)-1), BTN_HEIGHT);
+ 			align(btnPlay);
+-			btnSupport.setRect(btnPlay.right()+2, btnPlay.top(), btnPlay.width(), BTN_HEIGHT);
++			btnSandbox.setRect(btnPlay.right()+2, btnPlay.top(), btnPlay.width(), BTN_HEIGHT);
++			btnSupport.setRect(btnSandbox.right()+2, btnPlay.top(), btnPlay.width(), BTN_HEIGHT);
+ 			btnRankings.setRect(btnPlay.left(), btnPlay.bottom()+ GAP, (float) (Math.floor(buttonAreaWidth/3f)-1), BTN_HEIGHT);
+ 			btnJournal.setRect(btnRankings.right()+2, btnRankings.top(), btnRankings.width(), BTN_HEIGHT);
+ 			btnNews.setRect(btnJournal.right()+2, btnJournal.top(), btnRankings.width(), BTN_HEIGHT);
+@@ -233,7 +252,8 @@ public class TitleScene extends PixelScene {
+ 		} else {
+ 			btnPlay.setRect(btnAreaLeft, insets.top + topRegion+GAP, buttonAreaWidth, BTN_HEIGHT);
+ 			align(btnPlay);
+-			btnSupport.setRect(btnPlay.left(), btnPlay.bottom()+ GAP, btnPlay.width(), BTN_HEIGHT);
++			btnSupport.setRect(btnPlay.left(), btnPlay.bottom()+ GAP, (btnPlay.width()/2)-1, BTN_HEIGHT);
++			btnSandbox.setRect(btnSupport.right()+2, btnSupport.top(), btnSupport.width(), BTN_HEIGHT);
+ 			btnRankings.setRect(btnPlay.left(), btnSupport.bottom()+ GAP, (btnPlay.width()/2)-1, BTN_HEIGHT);
+ 			btnJournal.setRect(btnRankings.right()+2, btnRankings.top(), btnRankings.width(), BTN_HEIGHT);
+ 			btnNews.setRect(btnRankings.left(), btnRankings.bottom()+ GAP, btnRankings.width(), BTN_HEIGHT);
+@@ -316,6 +336,7 @@ public class TitleScene extends PixelScene {
+ 
+ 		btnPlay.enable(alpha != 0);
+ 		btnSupport.enable(alpha != 0);
++		btnSandbox.enable(alpha != 0);
+ 		btnRankings.enable(alpha != 0);
+ 		btnJournal.enable(alpha != 0);
+ 		btnNews.enable(alpha != 0);
+@@ -325,6 +346,7 @@ public class TitleScene extends PixelScene {
+ 
+ 		btnPlay.alpha(alpha);
+ 		btnSupport.alpha(alpha);
++		btnSandbox.alpha(alpha);
+ 		btnRankings.alpha(alpha);
+ 		btnJournal.alpha(alpha);
+ 		btnNews.alpha(alpha);
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/SandboxStepper.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/SandboxStepper.java
+new file mode 100644
+index 0000000..a604cdc
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/SandboxStepper.java
+@@ -0,0 +1,115 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.watabou.noosa.ui.Component;
++
++/**
++ * A single row used by the sandbox windows: "label  [-5][-1] value [+1][+5]".
++ * Subclasses provide the value through get() and receive changes through set().
++ */
++public abstract class SandboxStepper extends Component {
++
++	private static final float BTN_WIDTH = 17f;
++	private static final float VALUE_WIDTH = 24f;
++	private static final float GAP = 1f;
++
++	private final RenderedTextBlock label;
++	private final RenderedTextBlock value;
++	private final RedButton[] buttons;
++	private final int min;
++	private final int max;
++
++	/**
++	 * @param steps the button increments, in display order. Negative steps are shown to the
++	 *              left of the value and positive ones to the right, e.g. -5, -1, 1, 5
++	 */
++	public SandboxStepper( String labelText, int min, int max, int... steps ){
++		super();
++
++		this.min = min;
++		this.max = max;
++
++		label = PixelScene.renderTextBlock(labelText, 7);
++		add(label);
++
++		value = PixelScene.renderTextBlock("0", 8);
++		add(value);
++
++		buttons = new RedButton[steps.length];
++		for (int i = 0; i < steps.length; i++){
++			final int step = steps[i];
++			buttons[i] = new RedButton((step > 0 ? "+" : "") + step, 7){
++				@Override
++				protected void onClick() {
++					int current = SandboxStepper.this.get();
++					int newValue = Math.max(SandboxStepper.this.min, Math.min(SandboxStepper.this.max, current + step));
++					if (newValue != current){
++						SandboxStepper.this.set(newValue);
++					}
++					SandboxStepper.this.layout();
++				}
++			};
++			add(buttons[i]);
++		}
++	}
++
++	protected abstract int get();
++
++	protected abstract void set( int newValue );
++
++	/** Re-reads the value from get() and redraws it. */
++	public void refresh(){
++		layout();
++	}
++
++	@Override
++	protected void layout() {
++		super.layout();
++
++		value.text(String.valueOf(get()));
++
++		float buttonsWidth = buttons.length * (BTN_WIDTH + GAP);
++		float labelWidth = Math.max(10, width - buttonsWidth - VALUE_WIDTH);
++
++		label.maxWidth((int) labelWidth);
++		label.setPos(x, y + (height - label.height()) / 2f);
++		PixelScene.align(label);
++
++		float cx = x + labelWidth;
++		int half = buttons.length / 2;
++
++		for (int i = 0; i < half; i++){
++			buttons[i].setRect(cx, y, BTN_WIDTH, height);
++			cx += BTN_WIDTH + GAP;
++		}
++
++		value.setPos(cx + (VALUE_WIDTH - value.width()) / 2f, y + (height - value.height()) / 2f);
++		PixelScene.align(value);
++		cx += VALUE_WIDTH;
++
++		for (int i = half; i < buttons.length; i++){
++			buttons[i].setRect(cx, y, BTN_WIDTH, height);
++			cx += BTN_WIDTH + GAP;
++		}
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+index 96e0306..a7138cf 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndGame.java
+@@ -61,6 +61,19 @@ public class WndGame extends Window {
+ 		});
+ 		curBtn.icon(Icons.get(Icons.PREFS));
+ 
++		// Sandbox menu
++		if (Dungeon.sandbox && Dungeon.hero != null && Dungeon.hero.isAlive()) {
++			addButton( curBtn = new RedButton( Messages.get(this, "sandbox") ) {
++				@Override
++				protected void onClick() {
++					hide();
++					GameScene.show( new com.shatteredpixel.shatteredpixeldungeon.windows.WndSandbox() );
++				}
++			} );
++			curBtn.icon(Icons.get(Icons.CHALLENGE_COLOR));
++			curBtn.textColor(Window.TITLE_COLOR);
++		}
++
+ 		// Challenges window
+ 		if (Dungeon.challenges > 0) {
+ 			addButton( curBtn = new RedButton( Messages.get(this, "challenges") ) {
+@@ -81,6 +94,7 @@ public class WndGame extends Window {
+ 				protected void onClick() {
+ 					GamesInProgress.selectedClass = Dungeon.hero.heroClass;
+ 					GamesInProgress.curSlot = GamesInProgress.firstEmpty();
++					HeroSelectScene.nextSandbox = Dungeon.sandbox;
+ 					ShatteredPixelDungeon.switchScene(HeroSelectScene.class);
+ 				}
+ 			} );
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandbox.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandbox.java
+new file mode 100644
+index 0000000..9ef9edc
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandbox.java
+@@ -0,0 +1,195 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.scrolls.ScrollOfUpgrade;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.sandbox.SandboxMode;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.AlchemyScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++
++/**
++ * Main menu of Sandbox Mode: one button per category of the sandbox tools.
++ * Opened from the in-game menu (WndGame) while playing a Sandbox run.
++ */
++public class WndSandbox extends Window {
++
++	private static final int WIDTH = 150;
++	private static final int BTN_HEIGHT = 18;
++	private static final int GAP = 2;
++
++	private float pos;
++	private int column = 0;
++
++	public WndSandbox() {
++		super();
++
++		RenderedTextBlock title = PixelScene.renderTextBlock(Messages.get(this, "title"), 9);
++		title.hardlight(TITLE_COLOR);
++		title.setPos((WIDTH - title.width()) / 2f, GAP);
++		add(title);
++
++		pos = title.bottom() + 4;
++
++		addCategory("weapons", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.WEAPON));
++			}
++		});
++
++		addCategory("armor", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.ARMOR));
++			}
++		});
++
++		addCategory("enchants", new Runnable() {
++			@Override
++			public void run() {
++				selectItemFor(true);
++			}
++		});
++
++		addCategory("upgrade_scrolls", new Runnable() {
++			@Override
++			public void run() {
++				Item scroll = new ScrollOfUpgrade().identify();
++				SandboxMode.prefill(scroll);
++				GameScene.show(new WndSandboxItem(scroll, false));
++			}
++		});
++
++		addCategory("artifacts", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.ARTIFACT));
++			}
++		});
++
++		addCategory("rings", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.RING));
++			}
++		});
++
++		addCategory("missiles", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.MISSILE));
++			}
++		});
++
++		addCategory("other", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxList(SandboxMode.Category.OTHER));
++			}
++		});
++
++		addCategory("edit_item", new Runnable() {
++			@Override
++			public void run() {
++				selectItemFor(false);
++			}
++		});
++
++		addCategory("stats", new Runnable() {
++			@Override
++			public void run() {
++				GameScene.show(new WndSandboxStats());
++			}
++		});
++
++		addCategory("alchemy", new Runnable() {
++			@Override
++			public void run() {
++				AlchemyScene.clearToolkit();
++				ShatteredPixelDungeon.switchScene(AlchemyScene.class);
++			}
++		});
++
++		if (column == 1) pos += BTN_HEIGHT + GAP;
++
++		resize(WIDTH, (int) pos);
++	}
++
++	private void addCategory( String key, final Runnable action ){
++		float btnWidth = (WIDTH - GAP) / 2f;
++
++		RedButton btn = new RedButton(Messages.get(this, key), 8){
++			@Override
++			protected void onClick() {
++				hide();
++				action.run();
++			}
++		};
++		btn.multiline = true;
++		add(btn);
++		btn.setRect(column == 0 ? 0 : btnWidth + GAP, pos, btnWidth, BTN_HEIGHT);
++
++		if (column == 0){
++			column = 1;
++		} else {
++			column = 0;
++			pos += BTN_HEIGHT + GAP;
++		}
++	}
++
++	/**
++	 * Lets the player pick one of the items they carry (or wear), and then opens either the
++	 * enchantment/glyph picker or the item editor for it.
++	 */
++	private void selectItemFor( final boolean enchantOnly ){
++		GameScene.selectItem(new WndBag.ItemSelector() {
++			@Override
++			public String textPrompt() {
++				return Messages.get(WndSandbox.class, enchantOnly ? "pick_enchantable" : "pick_item");
++			}
++
++			@Override
++			public boolean itemSelectable(Item item) {
++				if (enchantOnly){
++					return item instanceof Weapon || item instanceof Armor;
++				}
++				return true;
++			}
++
++			@Override
++			public void onSelect(Item item) {
++				if (item == null) return;
++				if (enchantOnly){
++					GameScene.show(new WndSandboxEnchant(item, true, false));
++				} else {
++					GameScene.show(new WndSandboxItem(item, true));
++				}
++			}
++		});
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxEnchant.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxEnchant.java
+new file mode 100644
+index 0000000..50bd2e1
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxEnchant.java
+@@ -0,0 +1,157 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.sandbox.SandboxMode;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.ScrollingListPane;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++import com.shatteredpixel.shatteredpixeldungeon.utils.GLog;
++
++/**
++ * Lists every weapon enchantment / armor glyph (including curses) for one item.
++ * Any of them can be applied to any weapon/armor, ignoring the usual restrictions,
++ * and replaced again as often as wanted.
++ */
++public class WndSandboxEnchant extends Window {
++
++	private static final int WIDTH_P  = 126;
++	private static final int HEIGHT_P = 180;
++	private static final int WIDTH_L  = 216;
++	private static final int HEIGHT_L = 130;
++
++	private static final int BTN_HEIGHT = 14;
++	private static final int GAP = 2;
++
++	private final Item item;
++	private final boolean existing;
++	private final boolean fromItemWindow;
++
++	/**
++	 * @param existing       whether the item is already in the hero's inventory
++	 * @param fromItemWindow if true, applying a choice (or going back) returns to the item window,
++	 *                       otherwise this window is simply shown again
++	 */
++	public WndSandboxEnchant( Item item, boolean existing, boolean fromItemWindow ) {
++		super();
++
++		this.item = item;
++		this.existing = existing;
++		this.fromItemWindow = fromItemWindow;
++
++		int width = PixelScene.landscape() ? WIDTH_L : WIDTH_P;
++		int height = Math.min(PixelScene.landscape() ? HEIGHT_L : HEIGHT_P, (int) (PixelScene.uiCamera.height * 0.9f));
++		resize(width, height);
++
++		IconTitle title = new IconTitle(item);
++		title.setRect(0, 0, width - 42, 0);
++		add(title);
++
++		RedButton btnBack = new RedButton(Messages.get(WndSandbox.class, "back"), 7){
++			@Override
++			protected void onClick() {
++				hide();
++				reopenParent();
++			}
++		};
++		add(btnBack);
++		btnBack.setRect(width - 40, 0, 40, BTN_HEIGHT);
++
++		float top = Math.max(title.bottom(), btnBack.bottom()) + GAP;
++
++		ScrollingListPane list = new ScrollingListPane();
++		add(list);
++		list.setRect(0, top, width, height - top);
++
++		Class<?> current = currentClass();
++
++		//entry that removes the current enchantment/glyph
++		ScrollingListPane.ListItem none = new ScrollingListPane.ListItem(
++				new ItemSprite(item), null, Messages.get(WndSandbox.class, "remove_enchant")){
++			@Override
++			public boolean onClick(float x, float y) {
++				if (inside(x, y)){
++					applyChoice(null);
++					return true;
++				}
++				return false;
++			}
++		};
++		if (current == null) none.hardlight(0x44FF44);
++		list.addItem(none);
++
++		for (SandboxMode.Section section : SandboxMode.enchantSections(item)){
++			list.addTitle(Messages.get(WndSandbox.class, section.titleKey));
++
++			for (final Class<?> cls : section.classes){
++				ScrollingListPane.ListItem entry = new ScrollingListPane.ListItem(
++						new ItemSprite(item), null, SandboxMode.enchantName(cls)){
++					@Override
++					public boolean onClick(float x, float y) {
++						if (inside(x, y)){
++							applyChoice(cls);
++							return true;
++						}
++						return false;
++					}
++				};
++				if (cls == current) entry.hardlight(0x44FF44);
++				list.addItem(entry);
++			}
++		}
++
++		list.setRect(0, top, width, height - top);
++	}
++
++	private Class<?> currentClass(){
++		if (item instanceof Weapon && ((Weapon) item).enchantment != null){
++			return ((Weapon) item).enchantment.getClass();
++		} else if (item instanceof Armor && ((Armor) item).glyph != null){
++			return ((Armor) item).glyph.getClass();
++		}
++		return null;
++	}
++
++	private void applyChoice( Class<?> cls ){
++		SandboxMode.applyEnchant(item, cls);
++		GLog.p(Messages.get(WndSandbox.class, cls == null ? "enchant_removed" : "enchant_applied",
++				cls == null ? item.name() : SandboxMode.currentEnchantName(item)));
++		hide();
++		if (fromItemWindow){
++			reopenParent();
++		} else {
++			GameScene.show(new WndSandboxEnchant(item, existing, false));
++		}
++	}
++
++	private void reopenParent(){
++		if (fromItemWindow){
++			GameScene.show(new WndSandboxItem(item, existing));
++		} else {
++			GameScene.show(new WndSandbox());
++		}
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxItem.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxItem.java
+new file mode 100644
+index 0000000..c4db5b8
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxItem.java
+@@ -0,0 +1,173 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.items.armor.Armor;
++import com.shatteredpixel.shatteredpixeldungeon.items.weapon.Weapon;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.sandbox.SandboxMode;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++
++/**
++ * Window for one sandbox item. It is used in two ways:
++ *  - existing == false: a freshly made item that is configured (level, quantity, enchantment)
++ *    and then added to the inventory. The window stays open so several copies can be added.
++ *  - existing == true: an item the hero already carries/wears; changes apply immediately.
++ */
++public class WndSandboxItem extends Window {
++
++	private static final int WIDTH = 132;
++	private static final int ROW_HEIGHT = 16;
++	private static final int GAP = 3;
++
++	private Item item;
++	private final boolean existing;
++
++	private RenderedTextBlock status;
++
++	public WndSandboxItem( Item item, boolean existing ) {
++		super();
++
++		this.item = item;
++		this.existing = existing;
++
++		IconTitle title = new IconTitle(item);
++		title.setRect(0, 0, WIDTH, 0);
++		add(title);
++
++		float pos = title.bottom() + GAP;
++
++		status = PixelScene.renderTextBlock(6);
++		status.maxWidth(WIDTH);
++		status.setPos(0, pos);
++		add(status);
++		updateStatus();
++
++		//two lines are reserved so that the layout doesn't jump around when the text changes
++		pos += 14 + GAP;
++
++		if (item.isUpgradable()){
++			SandboxStepper level = new SandboxStepper(Messages.get(WndSandbox.class, "level"),
++					0, SandboxMode.MAX_LEVEL, -5, -1, 1, 5){
++				@Override
++				protected int get() {
++					return WndSandboxItem.this.item.level();
++				}
++
++				@Override
++				protected void set(int newValue) {
++					SandboxMode.setLevel(WndSandboxItem.this.item, newValue);
++					if (!WndSandboxItem.this.existing){
++						SandboxMode.defaultLevel = WndSandboxItem.this.item.level();
++					}
++					updateStatus();
++				}
++			};
++			add(level);
++			level.setRect(0, pos, WIDTH, ROW_HEIGHT);
++			pos += ROW_HEIGHT + GAP;
++		}
++
++		if (item.stackable){
++			SandboxStepper quantity = new SandboxStepper(Messages.get(WndSandbox.class, "quantity"),
++					1, SandboxMode.MAX_QUANTITY, -10, -1, 1, 10){
++				@Override
++				protected int get() {
++					return WndSandboxItem.this.item.quantity();
++				}
++
++				@Override
++				protected void set(int newValue) {
++					WndSandboxItem.this.item.quantity(newValue);
++					if (!WndSandboxItem.this.existing){
++						SandboxMode.defaultQuantity = newValue;
++					}
++					Item.updateQuickslot();
++				}
++			};
++			add(quantity);
++			quantity.setRect(0, pos, WIDTH, ROW_HEIGHT);
++			pos += ROW_HEIGHT + GAP;
++		}
++
++		if (item instanceof Weapon || item instanceof Armor){
++			RedButton btnEnchant = new RedButton(Messages.get(WndSandbox.class,
++					item instanceof Weapon ? "enchant_button" : "glyph_button"), 8){
++				@Override
++				protected void onClick() {
++					hide();
++					GameScene.show(new WndSandboxEnchant(WndSandboxItem.this.item, WndSandboxItem.this.existing, true));
++				}
++			};
++			btnEnchant.multiline = true;
++			add(btnEnchant);
++			btnEnchant.setRect(0, pos, WIDTH, ROW_HEIGHT);
++			pos += ROW_HEIGHT + GAP;
++		}
++
++		if (!existing){
++			RedButton btnAdd = new RedButton(Messages.get(WndSandbox.class, "add"), 9){
++				@Override
++				protected void onClick() {
++					addToInventory();
++				}
++			};
++			btnAdd.textColor(TITLE_COLOR);
++			add(btnAdd);
++			btnAdd.setRect(0, pos, WIDTH, ROW_HEIGHT + 2);
++			pos += ROW_HEIGHT + 2 + GAP;
++		}
++
++		resize(WIDTH, (int) (pos - GAP));
++	}
++
++	private void addToInventory(){
++		//the window keeps a copy (with the same level, quantity and enchantment)
++		//so that more of the same item can be added without reconfiguring it
++		Item toGive = item;
++		Item copy = toGive.duplicate();
++
++		SandboxMode.give(toGive);
++
++		if (copy == null){
++			hide();
++			return;
++		}
++		item = copy;
++		updateStatus();
++	}
++
++	private void updateStatus(){
++		StringBuilder sb = new StringBuilder();
++		if (item.isUpgradable()){
++			sb.append(Messages.get(WndSandbox.class, "status_level", item.level()));
++		}
++		String ench = SandboxMode.currentEnchantName(item);
++		if (ench != null){
++			if (sb.length() > 0) sb.append('\n');
++			sb.append(Messages.get(WndSandbox.class, item instanceof Weapon ? "status_enchant" : "status_glyph", ench));
++		}
++		status.text(sb.toString());
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxList.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxList.java
+new file mode 100644
+index 0000000..4fdb47d
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxList.java
+@@ -0,0 +1,231 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.ShatteredPixelDungeon;
++import com.shatteredpixel.shatteredpixeldungeon.items.Item;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.sandbox.SandboxMode;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.sprites.ItemSprite;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.shatteredpixel.shatteredpixeldungeon.ui.ScrollingListPane;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++
++import java.util.ArrayList;
++import java.util.Locale;
++
++/**
++ * Searchable, scrollable list of every item of one sandbox category.
++ * Tapping an entry opens the item window, or (with "quick add" switched on) adds it right away.
++ */
++public class WndSandboxList extends Window {
++
++	private static final int WIDTH_P  = 126;
++	private static final int HEIGHT_P = 180;
++	private static final int WIDTH_L  = 216;
++	private static final int HEIGHT_L = 130;
++
++	private static final int BTN_HEIGHT = 16;
++	private static final int GAP = 2;
++
++	private static class Entry {
++		String titleKey;               //non-null for section headers
++		Class<?> cls;                  //non-null for items
++		Item sample;                   //only used for the name and the icon
++	}
++
++	private final SandboxMode.Category category;
++	private final ArrayList<Entry> entries = new ArrayList<>();
++
++	private String query = "";
++
++	private final ScrollingListPane list;
++	private final RedButton btnSearch;
++	private final RedButton btnQuick;
++
++	public WndSandboxList( SandboxMode.Category category ) {
++		super();
++
++		this.category = category;
++
++		int width = PixelScene.landscape() ? WIDTH_L : WIDTH_P;
++		int height = Math.min(PixelScene.landscape() ? HEIGHT_L : HEIGHT_P, (int) (PixelScene.uiCamera.height * 0.9f));
++		resize(width, height);
++
++		//build the catalog once, searching only filters it
++		for (SandboxMode.Section section : SandboxMode.sections(category)){
++			if (section.titleKey != null){
++				Entry header = new Entry();
++				header.titleKey = section.titleKey;
++				entries.add(header);
++			}
++			for (Class<?> cls : section.classes){
++				Item sample = SandboxMode.create(cls);
++				if (sample == null) continue;
++				Entry e = new Entry();
++				e.cls = cls;
++				e.sample = sample;
++				entries.add(e);
++			}
++		}
++
++		RenderedTextBlock title = PixelScene.renderTextBlock(categoryTitle(), 9);
++		title.hardlight(TITLE_COLOR);
++		title.setPos(0, 1);
++		add(title);
++
++		RedButton btnBack = new RedButton(Messages.get(WndSandbox.class, "back"), 7){
++			@Override
++			protected void onClick() {
++				hide();
++				GameScene.show(new WndSandbox());
++			}
++		};
++		add(btnBack);
++		btnBack.setRect(width - 40, 0, 40, 12);
++
++		float top = Math.max(title.bottom(), btnBack.bottom()) + GAP;
++
++		btnSearch = new RedButton(Messages.get(WndSandbox.class, "search"), 7){
++			@Override
++			protected void onClick() {
++				ShatteredPixelDungeon.scene().addToFront(new WndTextInput(
++						Messages.get(WndSandbox.class, "search_title"),
++						Messages.get(WndSandbox.class, "search_desc"),
++						query,
++						30,
++						false,
++						Messages.get(WndSandbox.class, "search_ok"),
++						Messages.get(WndSandbox.class, "search_clear")){
++					@Override
++					public void onSelect(boolean positive, String text) {
++						query = positive && text != null ? text.trim().toLowerCase(Locale.ROOT) : "";
++						updateSearchButton();
++						refill();
++					}
++				});
++			}
++		};
++		add(btnSearch);
++		btnSearch.setRect(0, top, width - 60 - GAP, BTN_HEIGHT);
++
++		btnQuick = new RedButton("", 7){
++			@Override
++			protected void onClick() {
++				SandboxMode.quickAdd = !SandboxMode.quickAdd;
++				updateQuickButton();
++			}
++		};
++		add(btnQuick);
++		btnQuick.setRect(width - 60, top, 60, BTN_HEIGHT);
++
++		top += BTN_HEIGHT + GAP;
++
++		list = new ScrollingListPane();
++		add(list);
++		list.setRect(0, top, width, height - top);
++
++		updateSearchButton();
++		updateQuickButton();
++		refill();
++	}
++
++	private String categoryTitle(){
++		switch (category){
++			case WEAPON:   return Messages.get(WndSandbox.class, "weapons");
++			case ARMOR:    return Messages.get(WndSandbox.class, "armor");
++			case RING:     return Messages.get(WndSandbox.class, "rings");
++			case ARTIFACT: return Messages.get(WndSandbox.class, "artifacts");
++			case MISSILE:  return Messages.get(WndSandbox.class, "missiles");
++			default:       return Messages.get(WndSandbox.class, "other");
++		}
++	}
++
++	private void updateSearchButton(){
++		if (query.isEmpty()){
++			btnSearch.text(Messages.get(WndSandbox.class, "search"));
++		} else {
++			btnSearch.text(Messages.get(WndSandbox.class, "search") + ": " + query);
++		}
++	}
++
++	private void updateQuickButton(){
++		btnQuick.text(Messages.get(WndSandbox.class, SandboxMode.quickAdd ? "quick_on" : "quick_off"));
++	}
++
++	/** Rebuilds the visible list according to the current search text. */
++	private void refill(){
++		list.clear();
++
++		//headers are only shown when at least one item under them matches
++		Entry pendingHeader = null;
++		boolean any = false;
++
++		for (final Entry e : entries){
++			if (e.titleKey != null){
++				pendingHeader = e;
++				continue;
++			}
++
++			if (!query.isEmpty() && !e.sample.name().toLowerCase(Locale.ROOT).contains(query)){
++				continue;
++			}
++
++			if (pendingHeader != null){
++				list.addTitle(Messages.get(WndSandbox.class, pendingHeader.titleKey));
++				pendingHeader = null;
++			}
++
++			ScrollingListPane.ListItem item = new ScrollingListPane.ListItem(
++					new ItemSprite(e.sample), null, Messages.titleCase(e.sample.name())){
++				@Override
++				public boolean onClick(float x, float y) {
++					if (inside(x, y)){
++						onItemTapped(e.cls);
++						return true;
++					}
++					return false;
++				}
++			};
++			list.addItem(item);
++			any = true;
++		}
++
++		if (!any){
++			list.addTitle(Messages.get(WndSandbox.class, "no_results"));
++		}
++
++		list.setRect(list.left(), list.top(), list.width(), list.height());
++		list.scrollTo(0, 0);
++	}
++
++	private void onItemTapped( Class<?> cls ){
++		Item item = SandboxMode.prefill(SandboxMode.create(cls));
++		if (item == null) return;
++
++		if (SandboxMode.quickAdd){
++			SandboxMode.give(item);
++		} else {
++			GameScene.show(new WndSandboxItem(item, false));
++		}
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxStats.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxStats.java
+new file mode 100644
+index 0000000..dd88f61
+--- /dev/null
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndSandboxStats.java
+@@ -0,0 +1,166 @@
++/*
++ * Shattered Pixel Dungeon - Sandbox Mode (modification)
++ * Copyright (C) 2014-2026 Evan Debenham
++ *
++ * This program is free software: you can redistribute it and/or modify
++ * it under the terms of the GNU General Public License as published by
++ * the Free Software Foundation, either version 3 of the License, or
++ * (at your option) any later version.
++ *
++ * This program is distributed in the hope that it will be useful,
++ * but WITHOUT ANY WARRANTY; without even the implied warranty of
++ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
++ * GNU General Public License for more details.
++ *
++ * You should have received a copy of the GNU General Public License
++ * along with this program.  If not, see <http://www.gnu.org/licenses/>
++ */
++
++package com.shatteredpixel.shatteredpixeldungeon.windows;
++
++import com.shatteredpixel.shatteredpixeldungeon.Dungeon;
++import com.shatteredpixel.shatteredpixeldungeon.actors.hero.Hero;
++import com.shatteredpixel.shatteredpixeldungeon.messages.Messages;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.GameScene;
++import com.shatteredpixel.shatteredpixeldungeon.scenes.PixelScene;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RedButton;
++import com.shatteredpixel.shatteredpixeldungeon.ui.RenderedTextBlock;
++import com.shatteredpixel.shatteredpixeldungeon.ui.Window;
++
++/**
++ * Lets the player change the hero's level, strength, max health, gold and alchemical energy.
++ */
++public class WndSandboxStats extends Window {
++
++	private static final int WIDTH = 140;
++	private static final int ROW_HEIGHT = 16;
++	private static final int GAP = 3;
++
++	public WndSandboxStats() {
++		super();
++
++		final Hero hero = Dungeon.hero;
++
++		RenderedTextBlock title = PixelScene.renderTextBlock(Messages.get(WndSandbox.class, "stats"), 9);
++		title.hardlight(TITLE_COLOR);
++		title.setPos((WIDTH - title.width()) / 2f, 1);
++		add(title);
++
++		float pos = title.bottom() + 4;
++
++		//Level
++		SandboxStepper level = new SandboxStepper(Messages.get(WndSandbox.class, "stat_level"),
++				1, Hero.MAX_LEVEL, -5, -1, 1, 5){
++			@Override
++			protected int get() {
++				return hero.lvl;
++			}
++
++			@Override
++			protected void set(int newValue) {
++				hero.lvl = newValue;
++				hero.exp = 0;
++				hero.updateHT(true);
++			}
++		};
++		add(level);
++		level.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		//Strength
++		SandboxStepper strength = new SandboxStepper(Messages.get(WndSandbox.class, "stat_str"),
++				1, 99, -5, -1, 1, 5){
++			@Override
++			protected int get() {
++				return hero.STR;
++			}
++
++			@Override
++			protected void set(int newValue) {
++				hero.STR = newValue;
++			}
++		};
++		add(strength);
++		strength.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		//Max health (on top of what the level gives, the same way potions of life do)
++		SandboxStepper health = new SandboxStepper(Messages.get(WndSandbox.class, "stat_hp"),
++				0, 9999, -50, -10, 10, 50){
++			@Override
++			protected int get() {
++				return hero.HTBoost;
++			}
++
++			@Override
++			protected void set(int newValue) {
++				hero.HTBoost = newValue;
++				hero.updateHT(true);
++			}
++		};
++		add(health);
++		health.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		//Gold
++		SandboxStepper gold = new SandboxStepper(Messages.get(WndSandbox.class, "stat_gold"),
++				0, 999999, -1000, -100, 100, 1000){
++			@Override
++			protected int get() {
++				return Dungeon.gold;
++			}
++
++			@Override
++			protected void set(int newValue) {
++				Dungeon.gold = newValue;
++			}
++		};
++		add(gold);
++		gold.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		//Alchemical energy (alchemy is free in sandbox mode anyway, this is only for display)
++		SandboxStepper energy = new SandboxStepper(Messages.get(WndSandbox.class, "stat_energy"),
++				0, 999999, -1000, -100, 100, 1000){
++			@Override
++			protected int get() {
++				return Dungeon.energy;
++			}
++
++			@Override
++			protected void set(int newValue) {
++				Dungeon.energy = newValue;
++			}
++		};
++		add(energy);
++		energy.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		RedButton btnHeal = new RedButton(Messages.get(WndSandbox.class, "heal"), 8){
++			@Override
++			protected void onClick() {
++				hero.HP = hero.HT;
++				if (hero.sprite != null){
++					hero.sprite.showStatus(com.shatteredpixel.shatteredpixeldungeon.sprites.CharSprite.POSITIVE,
++							Integer.toString(hero.HT));
++				}
++			}
++		};
++		add(btnHeal);
++		btnHeal.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT + GAP;
++
++		RedButton btnBack = new RedButton(Messages.get(WndSandbox.class, "back"), 8){
++			@Override
++			protected void onClick() {
++				hide();
++				GameScene.show(new WndSandbox());
++			}
++		};
++		add(btnBack);
++		btnBack.setRect(0, pos, WIDTH, ROW_HEIGHT);
++		pos += ROW_HEIGHT;
++
++		resize(WIDTH, (int) pos);
++	}
++}
+diff --git a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndUpgrade.java b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndUpgrade.java
+index 35f1b06..97ad6bc 100644
+--- a/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndUpgrade.java
++++ b/core/src/main/java/com/shatteredpixel/shatteredpixeldungeon/windows/WndUpgrade.java
+@@ -445,12 +445,14 @@ public class WndUpgrade extends Window {
+ 					upgraded = ((MagicalInfusion) upgrader).upgradeItem(toUpgrade);
+ 				}
+ 
+-				if (!force) upgrader.detach(Dungeon.hero.belongings.backpack);
++				//in sandbox mode Scrolls of Upgrade are infinite and never consumed
++				if (!force && !(Dungeon.sandbox && upgrader instanceof ScrollOfUpgrade)) upgrader.detach(Dungeon.hero.belongings.backpack);
+ 				Item moreUpgradeItem = Dungeon.hero.belongings.getItem(upgrader.getClass());
+ 
+ 				hide();
+ 
+-				if (moreUpgradeItem != null && toUpgrade.isUpgradable()){
++				if (moreUpgradeItem != null && toUpgrade.isUpgradable()
++						&& !(Dungeon.sandbox && upgrader instanceof ScrollOfUpgrade)){
+ 					GameScene.show(new WndUpgrade(moreUpgradeItem, upgraded, false));
+ 				}
+ 			}
