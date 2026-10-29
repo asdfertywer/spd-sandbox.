@@ -26,15 +26,14 @@ jobs:
           distribution: temurin  
           java-version: 21  
   
-      - name: Prepare preinstalled Android SDK (accept licenses, add platform 36)  
-        run: |  
-          export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"  
-          SDKM="$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager"  
-          ls "$ANDROID_HOME" || true  
-          yes | sudo -E "$SDKM" --licenses > /dev/null || true  
-          sudo -E "$SDKM" "platforms;android-36" "build-tools;36.0.0"  
-          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"  
-        - name: Fix Android debug keystore directory
+            - name: Prepare Android SDK
+        run: |
+          export ANDROID_HOME="${ANDROID_HOME:-/usr/local/lib/android/sdk}"
+          echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"
+          yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses || true
+          "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" "platforms;android-36" "build-tools;36.0.0"
+
+      - name: Fix debug keystore
         run: |
           mkdir -p "$HOME/.config/.android"
           chmod -R u+rwX "$HOME/.config"
