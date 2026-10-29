@@ -34,7 +34,13 @@ jobs:
           yes | sudo -E "$SDKM" --licenses > /dev/null || true  
           sudo -E "$SDKM" "platforms;android-36" "build-tools;36.0.0"  
           echo "ANDROID_HOME=$ANDROID_HOME" >> "$GITHUB_ENV"  
-  
+        - name: Fix Android debug keystore directory
+        run: |
+          mkdir -p "$HOME/.config/.android"
+          chmod -R u+rwX "$HOME/.config"
+          mkdir -p "$HOME/.android"
+          chmod -R u+rwX "$HOME/.android"
+          
       - name: Build debug APK  
         working-directory: game  
         run: |  
