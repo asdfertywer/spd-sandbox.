@@ -11,7 +11,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout this repo (contains sandbox-mode.patch)
+      - name: Checkout this repo (contains sandbox-mode-2.patch)
         uses: actions/checkout@v4
 
       - name: Get official Shattered Pixel Dungeon and apply Sandbox patch
@@ -19,7 +19,7 @@ jobs:
           git clone https://github.com/00-Evan/shattered-pixel-dungeon.git game
           cd game
           git checkout 57a4e06a4caf162446d1c28caa7983f0493fecf0
-          git apply --whitespace=nowarn ../sandbox-mode.patch
+          git apply --whitespace=nowarn ../sandbox-mode-2.patch
 
       - uses: actions/setup-java@v4
         with:
